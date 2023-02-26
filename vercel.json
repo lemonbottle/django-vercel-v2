@@ -1,12 +1,9 @@
 {
-    "comment-builds": "routes is where Vercel looks for our application",
     "builds": [{
         "src": "pear/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
-
-    "comment-routes": "routes is where Vercel looks for our application",
     "routes": [
         {
             "src": "/(.*)",
